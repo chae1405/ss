@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Cornsilk"
+    android:orientation="vertical"
+    android:layout_alignParentLeft="true"
+    tools:context=".MainActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <FrameLayout
+
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/navigation"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <Button
+                    android:layout_width="300dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="80dp"
+                    android:backgroundTint="@color/FloralWhite"
+                    android:text="지능테스트,사회성숙도검사 "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"></Button>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/FloralWhite"
+                        android:drawableTop="@drawable/console"
+
+                        android:text="게임"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+
+                        >
+
+                    </Button>
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="@color/FloralWhite"
+                        android:drawableTop="@drawable/pills"
+                        android:text="약"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="@color/FloralWhite"
+                        android:drawableTop="@drawable/mortarboard"
+                        android:text="교육사이트"
+                        android:textColor="@color/black"
+                        android:textSize="13dp"
+
+                        >
+
+                    </Button>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="-329dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:backgroundTint="@color/FloralWhite"
+                        android:drawableTop="@drawable/group"
+                        android:text="커뮤니티"
+                        android:textColor="@color/black"
+                        android:textSize="16dp">
+
+                    </Button>
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="@color/FloralWhite"
+                        android:drawableTop="@drawable/smartphone"
+                        android:text="위치"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                    <Button
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="@color/FloralWhite"
+                        android:drawableTop="@drawable/diary"
+                        android:text="일기장"
+                        android:textColor="@color/black"
+                        android:textSize="20dp">
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_Navi"
+                android:layout_marginTop="670dp"
+                android:layout_weight="1"
+                app:menu="@menu/menu"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+        </FrameLayout>
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
